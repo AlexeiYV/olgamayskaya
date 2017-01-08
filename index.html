@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="l-section b-hero">
+		<div class="b-main-menu"></div>
+		<div class="b-hero__overlay"></div>
+		<div class="l-container">
+			<div class="b-header">
+				<img src="images/logo.png" alt="" class="b-logo">
+				<div class="b-phone">+38 (067) 470 23 43</div>
+				<a href="#" class="b-menu-toggle js-menu-toggle">
+					<img src="images/menu_icon.svg" alt="" class="b-menu-toggle__icon">
+				</a>
+			</div>
+			<div class="b-hero__name">Ольга Майская</div>
+			<h1 class="b-hero__title">Ведущая свадебных церемоний</h1>
+			<div class="b-button-group">
+				<a href="#" class="b-button">Смотреть шоурил</a>
+				<a href="#" class="b-button b-button--solid">Записаться на встречу</a>
+			</div>
+		</div>
+		<div class="b-ring">
+			<img src="images/ring.png" alt="">
+		</div>
+	</div>
+	<div class="b-hero__fixer"></div>
+	<div class="other-content">Other content</div>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	var windowHeight = $(document).height();
+	$('.b-hero__fixer').innerHeight(windowHeight);
+	$('.js-menu-toggle').click(function(event) {
+		event.preventDefault();
+		$('.b-main-menu').fadeToggle('slow');
+	});
+	</script>
+</body>
+</html>

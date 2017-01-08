@@ -1,0 +1,125 @@
+@import "compass";
+@import "compass/reset";
+@import "colors";
+@import "typography";
+
+.b-hero {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: image-url("index.jpg");
+	background-size: cover;
+	color: $brown;
+
+	&__overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(#fff, 0.85);
+	}
+
+	&__name {
+		font-weight: bold;
+		font-family: $body-ff;
+		letter-spacing: 0.82px;
+		text-transform: uppercase;
+		font-size: 3.125rem;
+		text-align: center;
+		margin-top: 8.75rem ;
+	}
+
+	&__title {
+		font-family: "Noto Serif", serif;
+		font-style: italic;
+		font-size: 2.5rem;
+		text-align: center;
+		margin: 1.25rem 0 6rem;
+	}
+}
+
+.l-container {
+	max-width: 1090px;
+	margin: 0 auto;
+	z-index: 1;
+	position: relative;
+}
+
+.b-header {
+	margin-top: 30px;
+	@include pie-clearfix;
+}
+
+.b-logo {
+	float: left;
+}
+
+.b-phone {
+	font-size: 1.2rem;
+	float: right;
+}
+
+.b-main-menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	display: none;
+	transition: all 1s ease-in;
+
+	&:hover {
+		transform: scale(100);
+	}
+}
+
+.b-menu-toggle {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.b-ring {
+	width: 30%;
+	z-index: 1;
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translate(-50%);
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.b-button-group {
+	display: table;
+	margin: 1rem auto 0;
+	border-spacing: 20px 0;
+
+	.b-button {
+		display: table-cell;
+		padding: 15px 20px;
+		min-width: 180px;
+		text-align: center
+	}
+}
+
+.b-button {
+	text-decoration: none;
+	letter-spacing: 1.05px;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	color: $pink;
+	border: 3px solid $pink;
+	
+	&--solid {
+		background-color: $pink;
+		color: #fff;
+	}
+}

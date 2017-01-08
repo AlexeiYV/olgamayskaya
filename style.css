@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400i&subset=cyrillic-ext");
+/* line 5, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url('/fonts/ProximaNova-Regular.eot?1483540098');
+  src: url('/fonts/ProximaNova-Regular.eot?&1483540098#iefix') format('embedded-opentype'), url('/fonts/ProximaNova-Regular.woff?1483540098') format('woff'), url('/fonts/ProximaNova-Regular.woff2?1483540098') format('woff2'), url('/fonts/ProximaNova-Regular.ttf?1483540098') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url('/fonts/ProximaNova-Bold.eot?1483540096');
+  src: url('/fonts/ProximaNova-Bold.eot?&1483540096#iefix') format('embedded-opentype'), url('/fonts/ProximaNova-Bold.woff?1483540096') format('woff'), url('/fonts/ProximaNova-Bold.woff2?1483540096') format('woff2'), url('/fonts/ProximaNova-Bold.ttf?1483540096') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/*==================*/
+/* line 38, sass/_typography.scss */
+body {
+  font-family: "ProximaNova", sans-serif;
+}
+
+/* line 6, sass/style.scss */
+.b-hero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url('/images/index.jpg?1483451508');
+  background-size: cover;
+  color: #BB8E6D;
+}
+/* line 16, sass/style.scss */
+.b-hero__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+/* line 23, sass/style.scss */
+.b-hero__name {
+  font-weight: bold;
+  font-family: "ProximaNova", sans-serif;
+  letter-spacing: 0.82px;
+  text-transform: uppercase;
+  font-size: 3.125rem;
+  text-align: center;
+  margin-top: 8.75rem;
+}
+/* line 33, sass/style.scss */
+.b-hero__title {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.25rem 0 6rem;
+}
+
+/* line 42, sass/style.scss */
+.l-container {
+  max-width: 1090px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 49, sass/style.scss */
+.b-header {
+  margin-top: 30px;
+  *zoom: 1;
+}
+/* line 38, ../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.b-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 54, sass/style.scss */
+.b-logo {
+  float: left;
+}
+
+/* line 58, sass/style.scss */
+.b-phone {
+  font-size: 1.2rem;
+  float: right;
+}
+
+/* line 63, sass/style.scss */
+.b-main-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: none;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+/* line 73, sass/style.scss */
+.b-main-menu:hover {
+  -webkit-transform: scale(100);
+      -ms-transform: scale(100);
+          transform: scale(100);
+}
+
+/* line 78, sass/style.scss */
+.b-menu-toggle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+/* line 85, sass/style.scss */
+.b-ring {
+  width: 30%;
+  z-index: 1;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+/* line 93, sass/style.scss */
+.b-ring img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 100, sass/style.scss */
+.b-button-group {
+  display: table;
+  margin: 1rem auto 0;
+  border-spacing: 20px 0;
+}
+/* line 105, sass/style.scss */
+.b-button-group .b-button {
+  display: table-cell;
+  padding: 15px 20px;
+  min-width: 180px;
+  text-align: center;
+}
+
+/* line 113, sass/style.scss */
+.b-button {
+  text-decoration: none;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #D9BAB5;
+  border: 3px solid #D9BAB5;
+}
+/* line 121, sass/style.scss */
+.b-button--solid {
+  background-color: #D9BAB5;
+  color: #fff;
+}

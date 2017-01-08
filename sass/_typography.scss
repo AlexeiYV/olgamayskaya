@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i&subset=cyrillic-ext');
+
+
+@include font-face('ProximaNova', font-files(
+  'ProximaNova-Regular.woff', 'woff',
+  'ProximaNova-Regular.woff2', 'woff2',
+  'ProximaNova-Regular.ttf', 'ttf'),
+  'ProximaNova-Regular.eot',
+  normal,
+  normal
+);
+
+@include font-face('ProximaNova', font-files(
+  'ProximaNova-Bold.woff', 'woff',
+  'ProximaNova-Bold.woff2', 'woff2',
+  'ProximaNova-Bold.ttf', 'ttf'),
+  'ProximaNova-Bold.eot',
+  bold,
+  normal
+);
+
+
+
+
+
+
+
+/*==================*/
+$body-ff: "ProximaNova", sans-serif;
+
+
+
+
+
+
+
+
+body {
+	font-family: $body-ff;
+}
